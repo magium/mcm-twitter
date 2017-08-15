@@ -25,15 +25,7 @@ Could not find a magium-configuration.xml file.  Where would you like me to put 
  > 1
 Wrote XML configuration file to: C:\Projects\mcm-twitter\magium-configuration.xml
 The context file C:\Projects\mcm-twitter\contexts.xml does not exist next to the magium-configuration.xml file.  Create it? y
-{ 
 ```
-
-Then, make sure that the remote configuration table is created
-
-```
-vendor/bin/magium-configuration  magium:configuration:create-table
-```
-
 Then configure the magium-configuration.xml file.  It will look something like this:
 
 ```
@@ -51,6 +43,12 @@ Then configure the magium-configuration.xml file.  It will look something like t
         </options>
     </cache>
 </magiumBase>
+```
+
+Then, make sure that the remote configuration table is created
+
+```
+vendor/bin/magium-configuration  magium:configuration:create-table
 ```
 
 ## Setting the Configuration
