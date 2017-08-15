@@ -1,0 +1,22 @@
+<magiumConfiguration xmlns="http://www.magiumlib.com/Configuration">
+    <section identifier="twitter" label="Twitter" font-awesome="twitter">
+        <group identifier="config" label="Configuration">
+            <element identifier="enabled" label="Enabled" type="select" source="Magium\Configuration\Source\Switches\EnableDisable">
+                <description>Set if the adapter is enabled.</description>
+                <value>1</value>
+            </element>
+            <element identifier="consumer_key" label="Consumer Key" type="text">
+                <description>The consumer key from Twitter</description>
+            </element>
+            <element identifier="consumer_secret" label="Consumer Secret" type="text">
+                <description>The consumer secret from Twitter</description>
+            </element>
+            <element identifier="oauth_token" label="Oauth Token" type="text">
+                <description>The Oauth token for the twitter account.  Only necessary if you are binding to a specific Twitter user</description>
+            </element>
+            <element identifier="oauth_token_secret" label="Oauth Token Secret" type="text">
+                <description>The Oauth token secret for the twitter account.  Only necessary if you are binding to a specific Twitter user</description>
+            </element>
+        </group>
+    </section>
+</magiumConfiguration>
